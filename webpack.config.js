@@ -1,4 +1,5 @@
 const path = require('path')
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
   entry: './lib/Jexl.js',
@@ -9,7 +10,15 @@ module.exports = {
   },
   mode: 'production',
   optimization: {
-    minimize: false
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          keep_classnames: true,
+          keep_fnames: true
+        }
+      })
+    ]
   },
   target: 'web'
 }
