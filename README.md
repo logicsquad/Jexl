@@ -10,12 +10,14 @@ original documentation, see `doc/usage.md`.
 
 Clone this project:
 
-```$ git clone https://github.com/logicsquad/Jexl.git```
+```$ git clone https://github.com/logicsquad/Jexl.git
+```
 
 Then run webpack over it:
 
 ```$ cd Jexl
-npx webpack --config webpack.config.js```
+npx webpack --config webpack.config.js
+```
 
 The output bundle is `dist/jexl.js`.
 
@@ -23,18 +25,21 @@ The output bundle is `dist/jexl.js`.
 
 Include it in your page:
 
-```<script type="text/javascript" src="jexl.js"></script>```
+```<script type="text/javascript" src="jexl.js"></script>
+```
 
 The global `jexl` variable is then a `Jexl` object, and you can use it
 in the usual way:
 
 ```jexl.eval(expression, context).then(function(res) {
     console.log(res);
-});```
+});
+```
 
 If you need a new `Jexl` object, you can create one with:
 
-```var j = new jexl.Jexl();```
+```var j = new jexl.Jexl();
+```
 
 ## Roadmap
 
