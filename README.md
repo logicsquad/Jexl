@@ -18,7 +18,7 @@ Then run webpack over it:
 
 ```
 $ cd Jexl
-npx webpack --config webpack.config.js
+$ npx webpack --config webpack.config.js
 ```
 
 The output bundle is `dist/jexl.js`.
